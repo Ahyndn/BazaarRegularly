@@ -1,0 +1,57 @@
+<div class="card-group">
+
+  @if (merchandise$ | async; as merchandise) {
+
+    @for (item of merchandise.slice(3, 5); track item.id) {
+
+      <div class="card">
+
+        <img
+          [src]="item.images?.[2] || item.images?.[0]"
+          [alt]="item.title"
+          class="card-img-top">
+
+        <img
+          [src]="item.meta.qrCode"
+          alt="QR Code"
+          class="card-img-top">
+
+        <div class="card-body">
+
+          <h5 class="card-title">
+            {{ item.title }}
+          </h5>
+
+          <p class="card-text">
+            {{ item.description }}
+          </p>
+
+        </div>
+
+        <ul class="list-group list-group-flush">
+
+          <li class="list-group-item">
+            {{ item.price }}
+          </li>
+
+          <li class="list-group-item">
+            {{ item.discountPercentage }}%
+          </li>
+
+          <li class="list-group-item">
+            SKU: {{ item.sku }}
+          </li>
+
+          <li class="list-group-item">
+            Barcode: {{ item.meta.barcode }}
+          </li>
+
+        </ul>
+
+      </div>
+
+    }
+
+  }
+
+</div>

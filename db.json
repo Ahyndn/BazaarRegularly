@@ -1,0 +1,21 @@
+{
+  "$schema": "./node_modules/json-server/schema.json",
+  "careers": [
+    {
+      "id": 1,
+      "title": "General Manager",
+      "location": "On-site, Toronto, Ontario, Canada",
+      "skills": ["Assisting with improving our metrics at Bazaar Regularly with a strong euphoria for fashionable bags", "Exceptional ability with organizing and coordinating to help with hosting our major gatherings (monthly workshops, seasonal conferences and yearly symposium)", "Communicate with our internal team of visual merchandisers, product designers, marketers, software developers, IT, logistics, supply chain, procurement, finance, human resources, legal, management and associates to help convey this incredible world of bags with the public together", "Work effectively with our external partners that includes vendors, suppliers, manufacturers and designers"],
+      "conditions": ["Full time, 9:00 am to 5:00 pm, Monday to Friday."],
+      "compensation": "$140,000 to $160,000"
+    },
+      {
+      "id": 2,
+      "title": "Software Developer, E-commerce",
+      "location": "Hybrid, three days in office per week in Toronto, Ontario, Canada",
+      "skills": ["Swift, iOS, Python, Go, Kotlin, Java and Javascript exists as options at Bazaar Regularly for software development.", "Proficiency with CLI is important at Bazaar Regularly since some of our technologies have different operating systems.", "Ability to help with data visualization and analysis of our metrics","Effectively present the software development direction, the process through comprehensible communication with our internal team of visual merchandisers, marketers, supply chain, procurement, logistics, software developers, IT, legal and management at Bazaar Regularly"],
+      "conditions": ["Full time, 8:00 am to 4:00 pm, Monday to Friday."],
+      "compensation": "$90,000 to $101,000"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+<div class="card-group">
+
+  @if (merchandise$ | async; as merchandise) {
+
+    @for (item of merchandise.slice(0, 3); track item.id) {
+
+      <div class="card">
+        <img
+          [src]="item.images[1]"
+          [alt]="item.title"
+          class="card-img-top">
+
+        <div class="card-body">
+          <h5 class="card-title">
+            {{ item.title }}
+          </h5>
+
+          <p class="card-text">
+            {{ item.description }}
+          </p>
+        </div>
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            {{ item.price }}
+          </li>
+
+          <li class="list-group-item">
+            SKU: {{ item.sku }}
+          </li>
+        </ul>
+      </div>
+
+    }
+
+  }
+
+</div>
